@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AACC,uBADK,CACL,sBAAsB,CAAA;EACpB,OAAO,EAAE,eAAe;EACxB,MAAM,EAAE,CAAC;CACV",
+    "sources": [
+        "input-table.scss"
+    ],
+    "names": [],
+    "file": "input-table.css"
+}

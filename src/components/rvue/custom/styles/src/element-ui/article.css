@@ -1,0 +1,39 @@
+.avue-article__title {
+  margin-bottom: 15px;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.avue-article__meta {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+.avue-article__lead {
+  color: #666;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  background: #f9f9f9;
+  padding: 10px;
+}
+
+.avue-article__body {
+  padding-top: 10px;
+  background: #fff;
+  font-family: Segoe UI,Lucida Grande,Helvetica,Arial,Microsoft YaHei,FreeSans,Arimo,Droid Sans,wenquanyi micro hei,Hiragino Sans GB,Hiragino Sans GB W3,FontAwesome,sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+.avue-article blockquote {
+  margin: 0;
+  font-family: Georgia,Times New Roman,Times,Kai,Kaiti SC,KaiTi,BiauKai,FontAwesome,serif;
+  padding: 1px 0 1px 15px;
+  border-left: 4px solid #ddd;
+}
+/*# sourceMappingURL=article.css.map */

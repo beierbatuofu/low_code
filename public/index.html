@@ -1,0 +1,102 @@
+<!--
+ * @Author: ben
+ * @LastEditTime: 2021-06-10 18:04:54
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="max-age=180" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+		<meta http-equiv="expires" content="0" />
+
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+
+		<title>聆风</title>
+		<script src="https://cdn.staticfile.org/Sortable/1.10.0-rc2/Sortable.min.js"></script>
+		<script src="https://cdn.staticfile.org/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+		<script src="https://cdn.staticfile.org/xlsx/0.14.1/xlsx.full.min.js"></script>
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.11&key=7ab53b28352e55dc5754699add0ad862&plugin=AMap.PlaceSearch"></script>
+		<script src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+		<script src="https://api.map.baidu.com/api?v=2.0&ak=XdKpC3KyXMiybngtP2Y3ipR1GQGmrAc9&s=1" type="text/javascript"></script>
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app">
+			<style>
+				@keyframes loading-dash {
+					0% {
+						stroke-dasharray: 1, 200;
+						stroke-dashoffset: 0;
+					}
+					50% {
+						stroke-dasharray: 90, 150;
+						stroke-dashoffset: -40px;
+					}
+					to {
+						stroke-dasharray: 90, 150;
+						stroke-dashoffset: -120px;
+					}
+				}
+				@keyframes loading-rotate {
+					to {
+						transform: rotate(1turn);
+					}
+				}
+				.loading-mask {
+					position: absolute;
+					z-index: 2000;
+					background-color: #fff;
+					margin: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					transition: opacity 0.3s;
+				}
+				.loading-spinner .path {
+					animation: loading-dash 1.5s ease-in-out infinite;
+					stroke-dasharray: 90, 150;
+					stroke-dashoffset: 0;
+					stroke-width: 2;
+					stroke: #6087fd;
+					stroke-linecap: round;
+				}
+				.loading-spinner {
+					top: 50%;
+					margin-top: -21px;
+					width: 100%;
+					text-align: center;
+					position: absolute;
+				}
+				.loading-spinner .circular {
+					height: 62px;
+					width: 62px;
+					animation: loading-rotate 1s linear infinite;
+				}
+				.loading-text {
+					color: #6087fd;
+					font-size: 14px;
+				}
+			</style>
+			<div class="loading-mask">
+				<div class="loading-spinner">
+					<svg viewBox="25 25 50 50" class="circular">
+						<circle cx="50" cy="50" r="20" fill="none" class="path"></circle>
+					</svg>
+					<p class="loading-text">loading</p>
+				</div>
+			</div>
+		</div>
+		<!-- built files will be auto injected -->
+	</body>
+	<script></script>
+</html>

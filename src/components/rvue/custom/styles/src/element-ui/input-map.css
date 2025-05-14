@@ -1,0 +1,44 @@
+.amap-icon img,
+.amap-marker-content img {
+  width: 25px;
+  height: 34px;
+}
+
+.avue-input-map__marker {
+  position: absolute;
+  top: -20px;
+  right: -118px;
+  color: #fff;
+  padding: 4px 10px;
+  -webkit-box-shadow: 1px 1px 1px rgba(10, 10, 10, 0.2);
+          box-shadow: 1px 1px 1px rgba(10, 10, 10, 0.2);
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: "";
+  background-color: #25a5f7;
+  border-radius: 3px;
+}
+
+.avue-input-map__content-input {
+  margin-bottom: 10px;
+}
+
+.avue-input-map__content-box {
+  position: relative;
+}
+
+.avue-input-map__content-container {
+  width: 100%;
+  height: 450px;
+}
+
+.avue-input-map__content-result {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: 250px;
+  height: 450px;
+  overflow-y: auto;
+}
+/*# sourceMappingURL=input-map.css.map */

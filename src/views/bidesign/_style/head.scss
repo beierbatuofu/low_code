@@ -1,0 +1,25 @@
+.bidead-container {
+	padding: 0 20px;
+	background: #fafafa;
+	margin-bottom: 10px;
+	@include JustityAndFlexWrap(flex, space-between, null, null);
+	height: 48px;
+	border-bottom: 1 px solid #e1e1e1;
+	.l {
+		@include JustityAndFlexWrap(flex, center, center, null);
+		span {
+			display: inline-block;
+			max-width: 250px;
+			@include ExtraNotDisplayed();
+			font-size: 16px;
+		}
+	}
+	.flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn {
+		font-size: 14px;
+	}
+}

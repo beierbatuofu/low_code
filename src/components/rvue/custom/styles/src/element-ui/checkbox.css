@@ -1,0 +1,8 @@
+.avue-checkbox .el-checkbox + .el-checkbox {
+  margin-left: 0;
+}
+
+.avue-checkbox .el-checkbox {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=checkbox.css.map */

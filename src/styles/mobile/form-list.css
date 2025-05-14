@@ -1,0 +1,78 @@
+@media screen and (max-width: 768px) {
+  .form-list .el-tabs__content {
+    height: auto;
+  }
+  .form-list .nav.left {
+    display: none;
+  }
+  .form-list .nav.right .el-avatar,
+  .form-list .nav.right .el-dropdown-selfdefine {
+    color: #2c3e50 !important;
+  }
+  .form-list .nav .nav-btn::after {
+    color: black;
+  }
+  .form-list .group {
+    height: auto !important;
+  }
+  .form-list .group > .flex {
+    display: block;
+  }
+  .form-list .group .node {
+    margin: 10px 0 !important;
+  }
+  .form-list .group .info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .form-list .flowcenter-dialog-container {
+    display: block;
+  }
+  .form-list .flowcenter-dialog-container .left-half {
+    width: auto;
+  }
+  .form-list .flowcenter-dialog-container .prop {
+    width: auto;
+  }
+  .form-list .flowcenter-wrap .el-drawer__header {
+    border-bottom: 0;
+  }
+  .form-list .el-avatar {
+    width: 20px;
+    height: 20px;
+  }
+  .form-list .flowcenter-dialog-container .left-half .infor-status ul li {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .form-list .flowcenter-dialog-container .left-half .infor-status ul li div:nth-child(1) i {
+    font-size: 12px;
+  }
+  .form-list .flowcenter-dialog-container .prop-title .flow {
+    display: none;
+  }
+  .form-list .flowcenter-dialog-container .el-tabs__item {
+    padding: 0 20px;
+  }
+  .form-list .flow-table {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .form-list .flow-table .el-button {
+    padding: 5px;
+  }
+  .form-list .flowcenter-wrap .container {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .form-list .flowcenter-dialog-container .left-half .infor-status ul {
+    display: block;
+  }
+  .form-list .flowcenter-dialog-container .left-half .infor-status ul li {
+    width: auto;
+  }
+  .form-list .flowcenter-dialog-container .left-half .infor-status ul .el-tabs__content {
+    padding: 0;
+  }
+}

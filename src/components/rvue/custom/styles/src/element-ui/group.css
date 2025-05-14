@@ -1,0 +1,99 @@
+.avue-group .el-collapse, .avue-group .el-collapse-item__wrap {
+  border-color: #fff;
+}
+
+.avue-group .el-collapse-item__header {
+  height: inherit;
+  border: none;
+}
+
+.avue-group .el-collapse-item__content, .avue-group .van-collapse-item__content {
+  padding-bottom: 0;
+}
+
+.avue-group .van-collapse-item__content {
+  padding: 0 2px;
+}
+
+.avue-group--arrow .el-collapse-item__arrow, .avue-group--arrow .van-icon-arrow {
+  display: none;
+}
+
+.avue-group .van-hairline--top-bottom::after, .avue-group .van-hairline-unset--top-bottom::after {
+  display: none;
+}
+
+.avue-group .van-collapse-item__title {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.avue-group .van-collapse-item__title::after {
+  left: 0 !important;
+}
+
+.avue-group--none {
+  margin: 0 !important;
+  border: none !important;
+}
+
+.avue-group--header .el-collapse-item__header, .avue-group--header .van-collapse-item__title {
+  display: none;
+}
+
+.avue-group .el-collapse-item__arrow {
+  margin-top: -25px;
+}
+
+.avue-group--collapse .el-collapse-item__arrow, .avue-group--collapse .el-collapse-item__header {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.avue-group__item {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-group__item:last-child {
+  border-bottom: none;
+}
+
+.avue-group__header {
+  width: 100%;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  line-height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+
+.avue-group__icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.avue-group__title {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+/*# sourceMappingURL=group.css.map */

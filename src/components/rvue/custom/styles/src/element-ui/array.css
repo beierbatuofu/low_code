@@ -1,0 +1,20 @@
+.avue-array__item {
+  margin-bottom: 5px;
+}
+
+.avue-array__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.avue-array__input .el-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.avue-array__input .el-button {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=array.css.map */

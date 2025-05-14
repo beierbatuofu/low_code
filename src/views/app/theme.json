@@ -1,0 +1,26 @@
+{
+  "default": {
+    "navLeftBackground": "#334054",
+    "navLeftPart": "part",
+    "navAppFontColor": "#000",
+    "folderUnderBackground": "#000",
+    "formIconBg": "true",
+    "formIconColor": "#000",
+    "formNameColor": "#000",
+    "folderIconColor": "",
+    "navHeadBackground": "#fff",
+    "mainBackground": "#f0f2f5",
+    "mainHasDiv": "true"
+  },
+  "theme1": {
+    "navLeftBackground": "#fff",
+    "folderUnderBackground": "#fff",
+    "mainBackground": "#eee"
+  },
+  "theme2": {
+    
+  },
+  "theme3": {
+    
+  }
+}

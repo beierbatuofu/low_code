@@ -1,0 +1,71 @@
+@media screen and (max-width: 768px) {
+  .app-icon,
+  .dev-apps {
+    display: none !important;
+  }
+  .form-list-left-menu {
+    display: inline-block !important;
+    color: #fff !important;
+    background: transparent !important;
+    font-size: 20px;
+    border: 0 !important;
+    padding: 0 !important;
+    vertical-align: middle;
+    color: #fff !important;
+    margin-top: -2px;
+  }
+  .m-header .el-icon-menu {
+    color: black !important;
+  }
+  .form-list-left {
+    z-index: 999;
+    background: #fff;
+    width: 100% !important;
+  }
+  .formList {
+    z-index: 999;
+    background: #fff;
+    width: 0% !important;
+  }
+  .iconSwitch {
+    display: none;
+  }
+  .show-menu {
+    transform: translateX(0%);
+  }
+  .form-list-right {
+    left: 0 !important;
+  }
+  .search-form-col {
+    width: 100% !important;
+  }
+  .el-col-8 {
+    width: 100% !important;
+  }
+  .btnSwitch {
+    margin-right: 1rem !important;
+  }
+  .search-form-btns {
+    width: 100% !important;
+  }
+  .search-form-btns .el-col,
+  .search-form-btns .el-form-item {
+    width: 100% !important;
+    text-align: center;
+    padding: 8px 0 !important;
+    margin: 0 !important;
+  }
+  .search-form-btns .el-col .el-form-item__content,
+  .search-form-btns .el-form-item .el-form-item__content {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .search-form-btns .el-col button:nth-of-type(1),
+  .search-form-btns .el-form-item button:nth-of-type(1) {
+    margin-right: 5px;
+  }
+  .search-form-btns .el-col button ~ button,
+  .search-form-btns .el-form-item button ~ button {
+    margin-top: 10px;
+  }
+}

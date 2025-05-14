@@ -1,0 +1,21 @@
+.avue-swipe__mobile .avue-swipe__item {
+  position: relative;
+}
+
+.avue-swipe__mobile .avue-swipe__title {
+  width: 100%;
+  padding: 8px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.avue-swipe__mobile .avue-swipe__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=swipe.css.map */

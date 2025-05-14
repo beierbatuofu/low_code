@@ -1,0 +1,103 @@
+.avue-checkbox__mobile .avue__tag, .avue-radio__mobile .avue__tag {
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.avue-grid__mobile {
+  padding: 30px 0 0 0;
+}
+
+.avue-grid__mobile .avue-grid__icon {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.avue-grid__mobile .avue-grid__icon i {
+  line-height: 50px;
+  font-size: 26px;
+  color: #fff;
+}
+
+.avue-grid__mobile .avue-grid__item {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.avue-grid__mobile .avue-grid__img {
+  width: 50px;
+  height: 50px;
+}
+
+.avue-grid__mobile .avue-grid__title {
+  line-height: 30px;
+  font-size: 13px;
+}
+
+.avue-swipe__mobile .avue-swipe__item {
+  position: relative;
+}
+
+.avue-swipe__mobile .avue-swipe__title {
+  width: 100%;
+  padding: 8px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.avue-swipe__mobile .avue-swipe__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.avue-cell__mobile .avue-cell__icon {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.avue-cell__mobile .avue-cell__icon--color {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.van-cell::after {
+  display: block !important;
+}
+
+.van-image-preview {
+  z-index: 9999 !important;
+}
+
+.van-field__control {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.avue-crud__mobile .avue-crud__page {
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.avue-crud__mobile .van-cell-group {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=index.css.map */

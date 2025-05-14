@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACE,AAAD,yBAAO,CAAA;EACL,OAAO,EAAE,KAAK;CACf",
+    "sources": [
+        "text-ellipsis.scss"
+    ],
+    "names": [],
+    "file": "text-ellipsis.css"
+}

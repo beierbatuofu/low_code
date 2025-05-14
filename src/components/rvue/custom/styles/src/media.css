@@ -1,0 +1,73 @@
+@media screen and (max-width: 992px) {
+  .el-dialog__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .el-button + .el-button {
+    margin-left: 0;
+  }
+  .el-upload-list--picture-card .el-upload-list__item,
+  .avue-upload__avatar,
+  .el-upload--picture-card, .avue-upload__icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+  .avue-tip {
+    display: none;
+  }
+  .avue-crud__menu {
+    display: block !important;
+  }
+  .avue-crud .el-form-item {
+    width: 100%;
+  }
+  .avue-crud .el-form-item__label {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .avue-crud .el-form-item__content {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+  .avue-crud__searchMenu {
+    text-align: center;
+  }
+  .avue-crud__title {
+    display: block !important;
+  }
+  .avue-crud__title p {
+    margin-bottom: 20px;
+  }
+  .avue-crud__title .avue-date__group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .avue-crud__title .avue-date__date {
+    display: none;
+  }
+  .avue-crud__title .avue-date__radio {
+    width: 100%;
+  }
+  .avue-crud__title .avue-date__radio .el-radio-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .avue-crud__title .avue-date__radio .el-radio-group label,
+  .avue-crud__title .avue-date__radio .el-radio-group .el-radio-button__inner {
+    width: 100%;
+  }
+  .avue-crud__title .avue-date__radio .el-radio-button:last-child .el-radio-button__inner {
+    border-radius: 0 4px 4px 0;
+    border-right: 1px solid #dcdfe6;
+  }
+}
+/*# sourceMappingURL=media.css.map */

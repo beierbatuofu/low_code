@@ -1,0 +1,13 @@
+.van-cell::after {
+  display: block !important;
+}
+
+.van-image-preview {
+  z-index: 9999 !important;
+}
+
+.van-field__control {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=vant-reset.css.map */

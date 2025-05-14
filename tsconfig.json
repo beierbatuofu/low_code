@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"strict": true,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"baseUrl": ".",
+		"types": ["webpack-env", "mocha", "chai"],
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"tests/**/*.ts",
+		"tests/**/*.tsx",
+		"types/**/*.ts",
+		"src/components/formDesign/packages/fields/install.js",
+		"src/packages/avueFormDesign/config/base/index.js",
+		"src/components/rvue/packages/form/FieldRule.js",
+		"src/components/rvue/rvueui/components/rvue-tabs/index.js",
+		"src/components/rvue/rvueui/components/rvue-tab-pane/index.js"
+	],
+	"exclude": ["node_modules"]
+}

@@ -1,0 +1,74 @@
+#selectTenant {
+	text-align: left;
+	height: 100vh;
+	background: url($env + "img/loginbg.jpg") no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#card:hover {
+	cursor: pointer;
+}
+
+.loginStyle {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-image: url($env + "img/loginbg.jpg");
+}
+
+.login-group {
+	.el-tabs__content {
+		overflow: inherit;
+	}
+	.el-tabs__nav {
+		margin-bottom: 20px;
+	}
+	.el-tabs__nav.is-stretch > * {
+		background: rgba(0, 0, 0, 0.2);
+	}
+	.el-tabs__active-bar {
+		opacity: 0;
+		display: none;
+	}
+	.el-tabs__nav-wrap:after {
+		display: none;
+		opacity: 0;
+	}
+	.el-tabs__item.is-active {
+		// color: #fff;
+		// background:rgba(255,255,255,0.2);
+	}
+	.el-tabs__item:hover {
+		color: #fff !important;
+	}
+	.el-tabs__item {
+		padding: 0;
+	}
+}
+
+.business-box {
+	max-height: 400px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.2);
+	color: #fff;
+	font-size: 16px;
+	.el-button {
+		background: transparent;
+		color: #fff;
+		font-size: 16px;
+		border-color: transparent;
+		padding: 0;
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+			color: #fff;
+			border-color: transparent;
+		}
+	}
+}

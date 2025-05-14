@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,kBAFc,CAEb,gBAAM,CAAA;EACN,UAAU,EAAE,IAAI;EAChB,gBAAgB,EAAE,IAAI;CACtB;;AALL,AAOE,kBAPgB,CAOhB,eAAe,CAAC;EACd,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "crud.scss"
+    ],
+    "names": [],
+    "file": "crud.css"
+}

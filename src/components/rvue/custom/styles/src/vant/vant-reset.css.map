@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,SAAS,AAAA,OAAO,CAAA;EACd,OAAO,EAAE,gBAAgB;CAC1B;;AACD,AAAA,kBAAkB,CAAA;EAChB,OAAO,EAAC,eAAe;CACxB;;AAED,AAAA,mBAAmB,CAAA;EACjB,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "vant-reset.scss"
+    ],
+    "names": [],
+    "file": "vant-reset.css"
+}

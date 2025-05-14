@@ -1,0 +1,26 @@
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	.appDialog .el-dialog {
+		width: auto;
+	}
+	.flow-dialog {
+		.el-dialog.is-fullscreen {
+			overflow-x: hidden !important;
+		}
+	}
+	.upload-file {
+		width: auto !important;
+	}
+	// 时间日期样式修改
+	.el-date-range-picker__content {
+		width: auto !important;
+	}
+	.el-date-range-picker {
+		width: 100% !important;
+	}
+	.el-date-range-picker .el-picker-panel__body {
+		min-width: auto;
+	}
+	.el-time-panel {
+		width: auto;
+	}
+}

@@ -1,0 +1,56 @@
+@import "./flowcenter.scss";
+@import "./dialog.scss";
+@import "./form-data.scss";
+@import "./form-list.scss";
+@import "./dashboard.scss";
+
+@media screen and (max-width: 1000px) {
+	.dashboard-content {
+		margin: 0;
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body,
+	html {
+		overflow-x: hidden;
+		width: 100%;
+	}
+	.dashboard-content {
+		padding: 10px 0px !important;
+		.el-row {
+			margin: 0 !important;
+		}
+	}
+	.list-main .content .app-item {
+		float: none !important;
+	}
+	.list-main .content .app-list {
+		display: block !important;
+		padding: 0px !important;
+		gap: 0 !important;
+		grid-template-columns: none !important;
+		//overflow: auto;
+	}
+	.dashboard-content {
+		margin: 0 !important;
+	}
+}
+@media screen and (max-width: 480px) {
+	.nav .nav-btn {
+		background: transparent !important;
+		margin: 0 !important;
+		padding: 0;
+
+		span {
+			display: none;
+		}
+
+		&::after {
+			// font-family: element-icons !important;
+			// content: "\e7ac";
+			// font-size: 20px;
+		}
+	}
+}

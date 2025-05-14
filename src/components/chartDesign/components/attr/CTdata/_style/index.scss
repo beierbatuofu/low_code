@@ -1,0 +1,24 @@
+.bidatadialog-container {
+	.el-tabs__item {
+		padding: 20px !important;
+	}
+	.form-list {
+		height: 220px;
+		padding: 20px 0;
+		overflow-y: scroll;
+		.form-item {
+			@include JustityAndFlexWrap(flex, center, center, null);
+			padding: 10px 30px;
+			cursor: pointer;
+			&-active {
+				border: 1px solid #eee;
+			}
+		}
+	}
+}
+::v-deep.bidatadialog-container {
+	.el-tabs__item {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

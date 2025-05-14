@@ -1,0 +1,696 @@
+html,
+body {
+	min-width: 320px;
+}
+#app {
+	font: 14px/1.5 "PingFang SC", "Microsoft YaHei", "Heiti SC", "arial", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #2c3e50;
+	min-width: 320px;
+	font-display: block;
+}
+
+#nav {
+	padding: 30px;
+
+	a {
+		font-weight: bold;
+		color: #2c3e50;
+
+		&.router-link-exact-active {
+			color: #42b983;
+		}
+	}
+}
+
+/**
+  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+  * http://cssreset.com
+  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom */
+
+a {
+	color: #7e8c8d;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dialog-footer {
+	border: none;
+	text-align: right;
+
+	padding: 20px 0px 0;
+}
+
+textarea {
+	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+.el-button {
+	color: rgb(76, 129, 255);
+	// border-color: rgb(76, 129, 255);
+}
+
+.button-style,
+.el-button:hover,
+.el-button:active,
+.el-button:focus,
+.el-button:focus:not(.focusing),
+.el-dropdown-selfdefine:focus:active {
+	background-color: rgb(76, 129, 255) !important ;
+	color: white !important;
+	border-color: rgb(76, 129, 255) !important;
+}
+
+.button-style,
+.el-button--primary:hover,
+.el-button--primary:active,
+.el-button--primary:focus,
+.el-button--primary:focus:not(.focusing),
+.el-dropdown-selfdefine:focus:active {
+	background-color: rgb(120, 160, 255) !important ;
+	color: white !important;
+	border-color: rgb(120, 160, 255) !important;
+}
+.button-style,
+.el-button--primary {
+	background-color: rgb(76, 129, 255) !important;
+	color: white !important;
+}
+
+.el-date-picker__header {
+	.el-icon-arrow-left {
+		color: #303133 !important;
+	}
+}
+.el-picker-panel__footer {
+	.el-button.is-disabled {
+		color: #c0c4cc !important;
+		background-color: #fff !important;
+		border-color: #ebeef5 !important;
+	}
+	.el-button--text {
+		border: none;
+		color: #6087fd;
+	}
+	.el-button--text:hover,
+	.el-button--text:active,
+	.el-button--text:focus {
+		background-color: #fff !important;
+		color: #66b1ff !important;
+	}
+}
+
+// dialog全局样式写在 rvue-dialog
+.el-dialog__body{
+	padding:10px ;
+}
+.lineOnly{
+	position: absolute;
+    top: 10px;
+    left: 25px;
+    width: 5px;
+    height: 25px;
+    background-color: #4d81ff;
+}
+
+.dialog-title-font{
+	font-weight: 600;
+}
+// .el-dialog__wrapper {
+// 	.el-dialog {
+// 		border-radius: 5px;
+// 	}
+// 	.dialog-title {
+// 		position: relative;
+// 		padding-left: 40px;
+// 		padding-top: 15px;
+// 		height: 60px;
+// 		// border-bottom: 1px solid #f1f1f1;
+// 		.dialog-title-line {
+// 			position: absolute;
+// 			top: 0;
+// 			left: 20px;
+// 			width: 5px;
+// 			height: 46px;
+// 			background-color: rgb(77, 129, 255);
+// 		}
+// 		.dialog-title-font {
+// 			font-size: 16px;
+// 			//	font-family: "微软雅黑";
+// 			font-weight: 800;
+// 			display: inline-block;
+// 			color: #000;
+// 			vertical-align: baseline;
+// 		}
+// 	}
+// 	.el-dialog__headerbtn,
+// 	.el-dialog__close {
+// 		font-size: 28px;
+// 		color: #000;
+// 	}
+// 	
+// 	.el-dialog__body {
+// 		padding: 20px 20px;
+// 		border-bottom: 1px solid #f1f1f1;
+// 		// max-height: 600px;
+// 		overflow-y: auto;
+// 	}
+// 	.el-dialog__footer {
+// 		.dialog-footer {
+// 			padding-top: 10px;
+// 			.el-button {
+// 				width: 70px;
+// 				height: 30px;
+// 				line-height: 8px;
+// 				text-align: center;
+// 				padding: 0;
+// 				border-radius: 2px;
+// 				color: rgb(76, 129, 255);
+// 				border-color: rgb(76, 129, 255);
+// 			}
+// 			.el-button:hover,
+// 			.el-button:active,
+// 			.el-button:focus {
+// 				background-color: rgb(76, 129, 255);
+// 				color: white;
+// 				border-color: rgb(76, 129, 255);
+// 			}
+// 			.el-button--primary {
+// 				background-color: rgb(76, 129, 255);
+// 				color: white;
+// 			}
+// 		}
+// 	}
+// }
+
+.el-message-box {
+	width:470px !important;
+	.el-message-box__header {
+		.el-message-box__title {
+			display: inline-block;
+			font-size: 16px;
+			color: #000;
+			width: 100%;
+			.el-message-box__status,
+			.el-icon-warning {
+				vertical-align: middle;
+				//color: rgb(230, 99, 99);
+				color:#f53f3f;
+				font-size: 37px !important;
+			}
+			span {
+				display: inline-block;
+				width: 85%;
+				line-height: 30px;
+				vertical-align: top;
+				word-wrap: break-word;
+				word-break: break-all;
+				white-space: pre-wrap !important;
+			}
+		}
+	}
+	.el-message-box__content {
+		text-align: left !important;
+		text-indent: 16px;
+		padding: 0 25px;
+		.el-message-box__input{
+			padding-top:10px;
+		}
+		.el-message-box__container {
+			text-indent: 0;
+			//padding-left: 10px;
+		}
+		.el-input {
+			text-indent: 0;
+			width: 360px;
+			.el-input__inner:focus {
+				border-color: rgba(233, 88, 85);
+			}
+		}
+	}
+	.el-message-box__message p {
+		margin-bottom: 25px;
+	}
+	.el-message-box__btns {
+		text-align: right;
+		.el-button {
+			width: 70px;
+			height: 30px;
+			line-height: 8px;
+			text-align: center;
+			padding: 0;
+			border-radius: 2px;
+			color: #f53f3f !important;
+			border-color: #f53f3f !important;
+		}
+		.el-button:focus,
+		.el-button:active,
+		.el-button:hover {
+			color: white !important;
+			border-color: rgba(230, 99, 99) !important ;
+			background-color: rgba(230, 99, 99) !important ;
+		}
+		.el-button--primary:focus,
+		.el-button--primary:active,
+		.el-button--primary:hover {
+			color: white !important;
+			border-color: #f53f3f !important ;
+			background-color: rgba(236, 138, 138) !important ;
+		}
+		.el-button--primary {
+			color: #fff !important ;
+			background-color: #f53f3f !important ;
+			border-color: rgba(230, 99, 99) !important ;
+		}
+	}
+}
+
+.is-checked {
+	.el-checkbox__label {
+		color: $colors !important;
+	}
+}
+
+//dialog全屏下去除圆角
+.el-dialog.is-fullscreen {
+	border-radius: 0 !important;
+}
+.form-list-left-menu {
+	display: none !important;
+}
+.app-icon,
+.dev-apps {
+	display: block;
+}
+
+.nav.left {
+	width: 300px;
+}
+
+.header-app-name {
+	display: inline-block;
+	width: 100%;
+	min-width: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.el-pagination button:hover {
+	color: $colors !important;
+}
+.el-pager {
+	.active {
+		background-color: $colors !important;
+		color: white !important;
+	}
+	li:not(.disabled).active {
+		background-color: $colors !important;
+	}
+}
+
+.el-date-table {
+	td.current:not(.disabled) span {
+		background-color: $colors !important;
+	}
+	td.today span {
+		// color: $colors !important;
+	}
+	td.available:hover {
+		color: $colors !important;
+	}
+	td.end-date span,
+	td.start-date span {
+		background-color: $colors !important;
+	}
+}
+.el-year-table {
+	td.today .cell {
+		color: $colors !important;
+	}
+	td .cell:hover,
+	.el-year-table td.current:not(.disabled) .cell {
+		color: $colors !important;
+	}
+}
+.el-month-table {
+	td.today .cell {
+		color: $colors !important;
+	}
+	td .cell:hover {
+		color: $colors !important;
+	}
+}
+
+.el-date-picker__header {
+	.el-picker-panel__icon-btn:hover {
+		color: $colors !important;
+	}
+	.el-date-picker__header-label.active,
+	.el-date-picker__header-label:hover {
+		color: $colors !important;
+	}
+}
+.el-tag {
+	color: $colors;
+	background-color: #ecf5ff;
+	border-color: #d9ecff;
+}
+.el-tag .el-tag__close {
+	color: $colors;
+}
+.el-radio__input.is-checked .el-radio__inner {
+	border-color: $colors !important;
+	background: $colors !important;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+	background-color: $colors !important;
+	border-color: $colors !important;
+}
+.el-radio__input.is-checked + .el-radio__label {
+	color: $colors !important;
+}
+.el-dialog__headerbtn:focus .el-dialog__close,
+.el-dialog__headerbtn:hover .el-dialog__close {
+	color: $colors;
+}
+
+.el-tree-node.is-current > .el-tree-node__content {
+	color: $colors !important;
+}
+
+.el-tabs__item.is-active {
+	color: $colors;
+}
+.department-body .el-tabs__active-bar {
+	background: $colors !important;
+}
+
+.attr-span .group .on {
+	background: $colors !important;
+}
+.not-same-error {
+	input {
+		border: 1px solid red !important;
+	}
+}
+// 富文本重置
+.w-e-text b {
+	font-weight: bold;
+}
+.w-e-panel-close {
+	z-index: 11111;
+}
+
+//
+.el-drawer__wrapper {
+	.el-drawer__body {
+		overflow-y: scroll;
+	}
+	.el-drawer__body::-webkit-scrollbar {
+		display: none;
+	}
+}
+//表格多余
+body .el-table th.gutter {
+	display: none !important;
+}
+.ct-container {
+	margin-bottom: 20px;
+}
+.el-input-number {
+	width: 100% !important;
+}
+
+//子表格只读样式
+.table-edit {
+	textarea {
+		height: 40px !important;
+		min-height: 40px !important;
+	}
+	.rvue-input .widget-readonly {
+		height: 40px !important;
+		min-height: 40px !important;
+	}
+	.widget-readonly,
+	.dept-readonly {
+		border: none !important;
+		border-radius: 0 !important;
+		overflow: auto;
+	}
+	.dept-chose {
+		white-space: nowrap;
+		overflow: hidden;
+		.el-tag {
+			display: inline-block;
+		}
+	}
+}
+//只读样式
+.widget-readonly {
+	border-bottom: 1px solid rgb(220, 223, 230);
+	border-radius: 0 !important;
+	min-height: 40px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	line-height: 40px;
+	box-sizing: border-box;
+	color: #666;
+	.item {
+		padding: 0 3px;
+	}
+}
+
+.el-table__header {
+	min-width: 100%;
+}
+
+//控制全局select option 宽度
+.el-select-dropdown__wrap,
+.el-select-dropdown,
+.el-select-dropdown__list {
+	max-width: 320px !important;
+	//  min-width:100px!important;
+	min-width: -webkit-fill-available;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	.el-select-dropdown__item {
+		// max-width: 320px !important;
+		// min-width: 100px !important;
+		overflow-x: hidden;
+	}
+}
+
+//全局 datetime
+.el-range-editor.el-input__inner {
+	padding: 0px !important;
+}
+.el-date-editor .el-range-separator {
+	padding: 0px;
+}
+.el-date-editor {
+	overflow: hidden;
+
+	i.el-icon-time {
+		display: none;
+	}
+	input.el-range-input {
+		width: 40%;
+		font-size: 13px;
+		min-width: 135px;
+	}
+}
+
+#iframeDown {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+}
+.widget-form-table-content,
+.table-edit {
+	textarea {
+		min-height: 40px !important;
+		height: 40px !important;
+	}
+	.el-dropdown-menu {
+		padding: 0 !important;
+	}
+}
+//编辑器报错hover
+.CodeMirror-lint-tooltip {
+	z-index: 66666 !important;
+}
+//编辑器显示按钮
+.tox-tinymce {
+	z-index: 1111 !important;
+}
+
+.el-message-box__btns {
+	text-align: right !important;
+}
+.el-message-box__title {
+	span {
+		line-height: 37px !important;
+	}
+}
+.el-message-box .el-message-box__message p {
+	margin-bottom: 10px !important;
+	color:#000;
+	font-weight: 500;
+	padding:5px 0;
+}
+.el-message-box--center .el-message-box__message {
+    margin-left: 35px !important;
+}
+.el-message-box .el-message-box__content .el-input{
+	margin-left:20px;
+}
+//富文本第一行行高
+.mce-content-body > :first-child {
+	line-height: 2px;
+	padding-top: 10px;
+}
+
+.el-message-box--center{
+	padding-bottom:15px !important;
+}
+
+.el-message-box__title span{
+	font-weight: 600;
+}

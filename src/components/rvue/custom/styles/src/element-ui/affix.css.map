@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACT,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,EAAE;CACZ",
+    "sources": [
+        "affix.scss"
+    ],
+    "names": [],
+    "file": "affix.css"
+}

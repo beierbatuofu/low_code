@@ -1,0 +1,203 @@
+/*
+.el-button--primary{
+    color: #FFF;
+    background-color: rgb(64,158,255);
+    border-color: rgb(64,158,255)
+}
+.nav-bar{
+    background-color: #ffffff;
+}
+.m-header .el-tabs__item.is-active {
+    color: #fff;
+}
+.el-button--danger.is-plain{
+
+}
+
+.left-icon .el-icon-arrow-left{
+   
+}
+.el-tabs__active-bar {
+
+    background-color: #4c81ff;
+   
+}
+.m-header .el-tabs__nav-wrap:after{
+    background-color: #fff;
+}
+
+.icon {
+    color:rgb(64,158,255)!important;
+}
+
+
+
+ .widget-form-item:hover {
+    background: #e8e8e8;
+    cursor: move;
+    color:#333!important;
+}
+
+.flow-tip i {
+    color:rgb(64,158,255)!important;
+}
+.flow-manage .version-menu {
+    color:rgb(64,158,255)!important;
+}
+
+.flow-tab .on {
+    border-bottom-color:rgb(64,158,255)!important;
+}
+
+.el-tag {
+   
+    color:rgb(64,158,255)!important;
+    
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color:#4c81ff !important;
+    border-color:#4c81ff !important;
+}
+
+.el-icon-menu{
+    color:rgb(64,158,255)!important;
+}
+
+.form-designer .el-button--primary.is-plain,
+.form-designer .el-button--danger.is-plain{
+    color:rgba(64,158,255,0.4);
+    background: rgba(255,255,255,1);
+    border-color: #fff;
+    box-shadow: 0px 1px 2px 0px  rgba(0,0,0,0.3)!important;
+}
+
+
+.form-designer .el-button.is-plain:focus,
+.form-designer .el-button.is-plain:hover {
+    border-color: #fff!important;
+    background: #fff;;
+}
+
+.form-designer .el-button.is-plain .icon-delete{
+    color: rgba(220,91,76,0.7)!important;
+}
+
+
+
+.form-designer .el-button.is-plain:hover .icon-delete,
+.form-designer .el-button.is-plain:focus .icon-delete{
+    color: rgba(220,91,76,1)!important;
+    
+}
+
+
+.form-designer .el-button.is-plain .icon-copy{
+    color: rgba(106,159,230,0.7)!important;
+}
+
+
+.form-designer .el-button.is-plain:hover .icon-copy,
+.form-designer .el-button.is-plain:focus .icon-copy{
+    color: rgba(106,159,230,1)!important;
+}
+
+
+
+
+
+.form-designer .fields-list .field-label:hover {
+    color:rgb(64,158,255);
+    border-color:rgb(64,158,255);
+}
+
+.form-designer .fields-list .field-label:hover span{
+    color:rgb(64,158,255);
+}
+
+.el-button--text {
+    color:rgb(64,158,255);
+}
+
+.form-designer .widget-form-container .widget-form-list .widget-form-item.active {
+    border-left-color:rgb(64,158,255);
+    background:rgba(64,158,255,0.3);
+
+}
+.form-designer .widget-form-container .widget-form-list .widget-form-item.active:hover{
+    border-left-color:rgb(64,158,255);
+    background:rgba(64,158,255,0.3);
+}
+
+.el-switch.is-checked .el-switch__core {
+    border-color: #4c81ff !important;
+    background-color: #4c81ff !important;
+}
+
+.van-button--info {
+
+    background-color: rgb(64,158,255)!important;
+    border-color: rgb(64,158,255)!important;
+}
+
+.el-textarea__inner:focus {
+
+    border-color:  rgb(64,158,255)!important;
+}
+.form-designer .widget-form-container .widget-form-list .widget-form-item:hover {
+    background:rgba(64,158,255,0.2);
+}
+
+.el-input-number__decrease:hover:not(.is-disabled)~.el-input .el-input__inner:not(.is-disabled), .el-input-number__increase:hover:not(.is-disabled)~.el-input .el-input__inner:not(.is-disabled) {
+    border-color:  rgb(64,158,255)!important;
+}
+
+.el-select-dropdown__item.selected {
+    color: #4c81ff !important;
+    
+}
+.el-select .el-input.is-focus .el-input__inner {
+    border-color: rgb(64,158,255)!important;
+}
+
+.iconfont{
+    color:rgb(64,158,255)!important;
+}
+
+
+
+.todo-wrapper:hover,.step-wrapper:hover {
+    background-color:rgba(64,158,255,0.1)!important;
+}
+.flex-launch .item {
+   
+    border-top-color:rgb(64,158,255)!important;
+}
+.flex-launch .bottom{
+    color:#409eff!important;
+}
+.el-button:focus{
+    background: #fff!important;
+    color:#606266;
+
+}
+.el-button:hover {
+    color:rgb(64,158,255);
+    border-color: rgba(64,158,255,0.2);
+    background-color: rgba(64,158,255,0.2);
+}
+
+.el-input.is-active .el-input__inner, .el-input__inner:focus {
+    border-color:rgb(64,158,255);
+    outline: 0;
+}
+
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+    background-color: #eee;
+    color:rgb(64,158,255);
+}
+
+.one-item:hover,.focus{
+    background-color:rgba(64,158,255,0.1)!important;
+}
+*/

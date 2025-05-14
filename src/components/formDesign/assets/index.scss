@@ -1,0 +1,694 @@
+$primary-color: #6087fd;
+$primary-active-color: #ecf5ff;
+$primary-background-color: #ecf8ff;
+$scroll-bgc: rgba(156, 168, 184, 0.5); //滚轮背景色
+$white: #fff;
+$black: rgba(0, 0, 0, 0); //黑色透明
+$border-bgc: #f4f6fc; //边框底色
+$danger: #f56c6c; //危险色-红色
+$warning: #e6a23c; //预警色-橙色
+$height: calc(100% - 45px); //设置高度
+$hundred: 100%; //一百
+$fifty: 50%; //50
+
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 !important;
+}
+
+//-------------可继承共同样式-----------
+
+%common-style {
+	font-size: 12px;
+	display: block;
+	width: 48%;
+	line-height: 26px;
+	position: relative;
+	float: left;
+	left: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 1%;
+	color: #333;
+	border: 1px solid $border-bgc;
+}
+%common-a {
+	display: block;
+	background: $border-bgc;
+	border: 1px solid $border-bgc;
+}
+%common-icon {
+	margin-right: 6px;
+	margin-left: 8px;
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: middle;
+}
+%common-span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+%common-quartet {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+%common-ghost-all {
+	background: $white;
+	border-left: 5px solid $primary-color;
+	box-sizing: border-box;
+	font-size: 0;
+	content: "";
+	overflow: hidden;
+	padding: 0 !important;
+	position: relative;
+	outline: none 0;
+}
+%common-ghost-part {
+	height: $hundred;
+	width: 0 !important;
+	min-width: 0 !important;
+	margin: 1px 2px 0 2px;
+}
+
+%common-active-hover {
+	outline: 1px solid $primary-color;
+	outline-offset: -1px;
+}
+%common-hover {
+	background: $primary-background-color;
+	cursor: move;
+}
+%common-active {
+	border-left: 3px solid $primary-color;
+	background: $primary-active-color;
+}
+%common-tableForm-formItem {
+	min-height: 55px;
+	padding: 0px 10px 5px 10px;
+	margin: 0;
+	position: relative;
+	border-left: 5px solid transparent;
+}
+
+%common-item-after {
+	position: absolute;
+	display: block;
+	content: "";
+	z-index: 1001;
+}
+%common-height-width {
+	width: 7px;
+	height: 10px;
+}
+
+//----------混合动态-----------
+@mixin Dynamic-param($bottoms, $right, $zIndex: 1002) {
+	position: absolute;
+	bottom: $bottoms;
+	right: $right;
+	z-index: $zIndex;
+}
+@mixin Scroller-param($color) {
+	border-radius: 10px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0);
+	background-color: $color;
+}
+
+//-----------------------------全局样式--------------------------------
+.widget-form-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	width: 100%;
+	.widget-action-delete {
+		@include Dynamic-param(-18px, 10px);
+	}
+	.widget-action-clone {
+		@include Dynamic-param(-18px, 50px);
+	}
+	.widget-action-clear {
+		@include Dynamic-param(-18px, 90px);
+	}
+
+	.el-form-item__label {
+		line-height: 24px;
+		padding: 0;
+		float: inherit !important;
+	}
+}
+
+.widget-config-desc {
+	font-size: 12px;
+	color: #777;
+	word-break: break-all;
+}
+.form-designer {
+	height: $hundred;
+	background: $white;
+
+	.widget-config-label {
+		display: inline-block;
+
+		font-size: 14px;
+		color: #606266;
+	}
+	.widget-config-group {
+		margin-bottom: 18px;
+		.tags {
+			border: 1px solid #f2f2f2;
+			// padding: 5px;
+			margin-bottom: 10px;
+			.el-tag {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.fields-list {
+		padding: 10px 0;
+		width: $hundred;
+		height: $hundred;
+
+		.field-title {
+			padding: 8px 12px;
+			font-size: 13px;
+		}
+
+		ul {
+			position: relative;
+			overflow: hidden;
+			padding: 0 10px 10px;
+			margin: 0;
+		}
+
+		.field-label {
+			@extend %common-style;
+			padding: 0;
+			&:hover {
+				color: $primary-color;
+				border: 1px dashed $primary-color;
+				span {
+					color: #568dcc;
+				}
+			}
+
+			& > a {
+				@extend %common-a;
+				cursor: move;
+				.icon {
+					@extend %common-icon;
+					color: #8e9194;
+				}
+
+				span {
+					@extend %common-span;
+					color: #000;
+				}
+			}
+		}
+
+		.field-label-disabled {
+			@extend %common-style;
+			&:hover {
+				color: gray;
+				border: 1px dashed gray;
+			}
+			& > a {
+				@extend %common-a;
+				cursor: not-allowed;
+
+				.icon {
+					@extend %common-icon;
+				}
+
+				span {
+					@extend %common-span;
+				}
+			}
+		}
+	}
+
+	.widget-container {
+		flex: 1;
+		border-left: 1px solid #e0e0e0;
+		border-right: 1px solid #e0e0e0;
+
+		.widget-container-header {
+			height: 45px !important;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 2px solid #e4e7ed;
+		}
+
+		.el-main {
+			padding: 0;
+			position: relative;
+		}
+	}
+
+	.widget-form-container {
+		height: $hundred;
+		position: relative;
+		@extend %common-quartet;
+
+		.el-form {
+			height: $hundred;
+			.el-row {
+				height: $hundred;
+			}
+		}
+
+		.widget-form-list {
+			height: $hundred;
+			min-height: $height;
+			padding-bottom: 50px;
+			overflow: hidden;
+			overflow-y: scroll;
+
+			.widget-form-item {
+				@extend %common-tableForm-formItem;
+				.el-form-item__content {
+					input {
+						height: 36px;
+					}
+				}
+
+				&.required {
+					.el-form-item__label::before {
+						content: "*";
+						color: $danger;
+						margin-right: 4px;
+					}
+				}
+
+				&:after {
+					@extend %common-quartet;
+					@extend %common-item-after;
+				}
+
+				&:hover {
+					@extend %common-hover;
+				}
+
+				&.active {
+					@extend %common-active;
+				}
+
+				.widget-action-delete {
+					@include Dynamic-param(-32px, 10px);
+				}
+				.widget-action-clone {
+					@include Dynamic-param(-32px, 50px);
+				}
+				.widget-action-clear {
+					@include Dynamic-param(-32px, 90px);
+				}
+			}
+			.widget-table-form {
+				@extend %common-tableForm-formItem;
+				&:after {
+					z-index: 1;
+				}
+				&.required {
+					.el-form-item__label::before {
+						content: "*";
+						color: $danger;
+						margin-right: 4px;
+					}
+				}
+				&:hover {
+					@extend %common-hover;
+				}
+
+				&.active {
+					@extend %common-active;
+				}
+			}
+			.widget-form-table {
+				position: relative;
+				padding: 2px;
+				float: left;
+				width: $hundred;
+				div::-webkit-scrollbar {
+					@extend %common-height-width;
+				}
+				div::-webkit-scrollbar-thumb {
+					@include Scroller-param($scroll-bgc);
+				}
+
+				&-content {
+					display: flex;
+					padding: 10px 5px;
+					width: $hundred;
+					overflow-x: scroll;
+					height: $hundred;
+					outline: 1px dashed #ccc;
+					outline-offset: -1px;
+					min-height: 103px;
+
+					.ghost {
+						@extend %common-ghost-all;
+						@extend %common-ghost-part;
+						min-height: 90px;
+					}
+				}
+
+				&-item {
+					position: relative;
+					padding: 1px;
+					height: $hundred;
+					flex-shrink: 0;
+
+					&.required {
+						.el-table__header .cell::before {
+							content: "*";
+							color: $danger;
+							margin-right: 4px;
+						}
+					}
+
+					&.active {
+						@extend %common-active-hover;
+					}
+
+					&:hover {
+						@extend %common-active-hover;
+						cursor: move;
+					}
+
+					&:after {
+						@extend %common-item-after;
+						@extend %common-quartet;
+					}
+
+					.widget-table-action-delete {
+						@include Dynamic-param(0, 0);
+					}
+
+					.widget-table-action-clone {
+						@include Dynamic-param(0, 30px);
+						i {
+							font-size: 10px;
+						}
+					}
+
+					.el-button--small.is-circle {
+						padding: 5px;
+					}
+				}
+
+				&.active {
+					// border-left: 3px solid $primary-color;
+					background: $primary-active-color;
+				}
+
+				&:hover {
+					@extend %common-hover;
+				}
+
+				.widget-action-delete {
+					@include Dynamic-param(-12px, 10px, 1001);
+				}
+
+				.widget-action-clear {
+					@include Dynamic-param(-12px, 50px, 1001);
+				}
+
+				.widget-action-clone {
+					@include Dynamic-param(-12px, 90px, 1001);
+				}
+				.widget-form-item {
+					width: 100%;
+					border-left: 0;
+				}
+			}
+
+			.widget-form-group {
+				position: relative;
+				width: $hundred;
+				float: left;
+				padding: 2px;
+
+				&__head {
+					margin: 10px;
+				}
+
+				&__body {
+					min-height: 150px;
+					height: $hundred;
+					outline: 1px dashed #ccc;
+					outline-offset: -1px;
+					overflow: hidden;
+					padding-bottom: 15px;
+
+					.ghost {
+						@extend %common-ghost-all;
+						@extend %common-ghost-part;
+						min-height: 57px;
+					}
+				}
+
+				&__item {
+					padding: 10px;
+					margin: 3px;
+					position: relative;
+					border-left: 5px solid transparent;
+					background: $white;
+
+					&.required {
+						.el-form-item__label::before {
+							content: "*";
+							color: $danger;
+							margin-right: 4px;
+						}
+					}
+
+					&.active {
+						@extend %common-active-hover;
+					}
+
+					&:hover {
+						@extend %common-active-hover;
+						cursor: move;
+					}
+
+					&:after {
+						@extend %common-item-after;
+						@extend %common-quartet;
+					}
+
+					&--delete {
+						@include Dynamic-param(-24px, 0);
+					}
+
+					&--clone {
+						@include Dynamic-param(-24px, 34px);
+					}
+				}
+
+				&.active {
+					@extend %common-active;
+				}
+
+				&:hover {
+					@extend %common-hover;
+				}
+
+				.widget-action-delete {
+					@include Dynamic-param(-12px, 10px, 1001);
+				}
+
+				.widget-action-clear {
+					@include Dynamic-param(-12px, 50px, 1001);
+				}
+
+				.widget-action-clone {
+					@include Dynamic-param(-12px, 90px, 1001);
+				}
+			}
+
+			.iconfont {
+				font-size: 13px;
+			}
+
+			.el-button--small.is-circle {
+				padding: 7px;
+			}
+		}
+
+		.ghost {
+			@extend %common-ghost-all;
+			height: 0 !important;
+			width: $hundred;
+			margin: 2px 0;
+		}
+	}
+
+	.widget-config-container {
+		height: $hundred;
+		padding-top: 5px;
+
+		.el-tabs {
+			height: $hundred;
+		}
+
+		.el-tabs__header {
+			margin: 0 !important;
+			height: 45px;
+			background: $white;
+			z-index: 1000;
+		}
+
+		.el-tabs__content {
+			height: $height;
+			overflow-y: scroll;
+		}
+
+		.widget-config {
+			.el-tabs__header {
+				position: relative;
+				display: block;
+				top: 0;
+				margin: 0 !important;
+			}
+
+			.el-tabs__content {
+				margin-top: 0;
+			}
+
+			.ghost {
+				background: $white;
+				border: 1px dashed $primary-color;
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+
+				li {
+					display: flex;
+					align-items: center;
+					width: $hundred;
+
+					.ghost {
+						list-style: none;
+						font-size: 0;
+						height: 35px;
+					}
+				}
+			}
+		}
+		.avue-group__item {
+			padding: 0;
+		}
+	}
+
+	.el-container {
+		height: $hundred;
+
+		.el-main {
+			height: $height;
+		}
+
+		.el-aside {
+			background: $white;
+		}
+	}
+
+	.danger {
+		color: $danger;
+	}
+
+	.warning {
+		color: $warning;
+	}
+
+	.el-input-number {
+		width: $hundred;
+	}
+
+	.el-select {
+		width: $hundred;
+	}
+}
+
+.drawer-foot {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	display: flex;
+
+	button {
+		width: $fifty;
+	}
+
+	& > span {
+		display: inline-block;
+		width: $fifty;
+		button {
+			width: $hundred;
+		}
+	}
+}
+
+// --------滚轮全局样式优化---------
+
+::-webkit-scrollbar {
+	@extend %common-height-width;
+}
+::-webkit-scrollbar-track {
+	@include Scroller-param($black);
+}
+
+::-webkit-scrollbar-thumb {
+	@include Scroller-param($scroll-bgc);
+}
+
+.popper-bo {
+	.el-alert {
+		margin-bottom: 10px;
+	}
+}
+
+.el-drawer__wrapper {
+	:focus {
+		outline: 0;
+	}
+}
+.widget-config {
+	.avue-empty {
+		margin-top: 100px !important;
+	}
+}
+
+//页面的代码已经被注释，全局样式还在，等待确认删除
+.form-designer .el-button--primary.is-plain,
+.form-designer .el-button--danger.is-plain {
+	color: rgba(92, 160, 226, 0.4) !important;
+	background: rgba(255, 255, 255, 1) !important;
+	border-color: $white !important;
+	box-shadow: 0px 1px 2px 0px $black;
+}
+
+.widget-form-container {
+	.el-form-item__label {
+		text-overflow: inherit !important;
+		white-space: inherit !important;
+		overflow: inherit !important;
+	}
+}

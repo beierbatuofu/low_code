@@ -1,0 +1,50 @@
+.bi-right {
+	width: 330px;
+	border-right: 1px solid #e8eaed;
+	// overflow: hidden;
+	padding: 10px;
+	box-sizing: border-box;
+	background: rgb(247, 248, 250);
+}
+.config-item {
+	margin-top: 20px;
+}
+::v-deep.bi-right {
+	.el-tabs__item {
+		@include JustityAndFlexWrap(inline-flex, center, center, null);
+		width: 50%;
+		padding: 0;
+		&:hover {
+			background: #6087fd;
+			color: #fff;
+		}
+		color: #525d6d;
+	}
+	.is-active {
+		background: white;
+	}
+	.el-tabs__content {
+		height: auto !important;
+	}
+	.el-tabs__header {
+		margin-bottom: 20px;
+	}
+	.el-tabs__active-bar {
+		display: none;
+	}
+	.el-tabs__nav {
+		width: 100%;
+		display: flex;
+	}
+	.el-tabs__nav-wrap::after {
+		height: 0;
+	}
+	.el-tabs__nav-wrap {
+		padding: 5px;
+		background: #eee;
+	}
+	.el-select,
+	.input {
+		width: 100%;
+	}
+}

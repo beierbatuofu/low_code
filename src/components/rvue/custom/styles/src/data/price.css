@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.data-price .item {
+  margin: 0 20px;
+  text-align: center;
+  -webkit-box-shadow: 2px 3px 15px #eee;
+          box-shadow: 2px 3px 15px #eee;
+}
+
+.data-price .item:hover {
+  border: 1px solid #00a680;
+}
+
+.data-price .item:hover .body {
+  color: #fff;
+  background-color: #00a680;
+}
+
+.data-price .item:hover .body::after {
+  border-top-color: #00a680;
+}
+
+.data-price .item:hover .list {
+  color: #00a680;
+}
+
+.data-price .item:hover .price {
+  color: #fff;
+}
+
+.data-price .item .title {
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+  color: #333;
+}
+
+.data-price .item .price {
+  padding: 0 8px;
+  margin: 0 0 50px;
+  line-height: 120px;
+  height: 120px;
+  font-size: 42px;
+  color: #6b6b6b;
+}
+
+.data-price .item .append {
+  font-size: 16px;
+}
+
+.data-price .item .body {
+  position: relative;
+  padding: 0;
+  margin: 0 0 50px;
+  background-color: #f4f4f4;
+  line-height: 120px;
+  height: 120px;
+  font-size: 42px;
+  color: #6b6b6b;
+}
+
+.data-price .item .body::before {
+  content: "¥";
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.data-price .item .body::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-color: transparent;
+  border-style: solid;
+  border-width: 30px;
+  border-bottom-width: 0;
+  border-top-width: 20px;
+  border-top-color: #f4f4f4;
+}
+
+.data-price .item .list {
+  padding-bottom: 30px;
+  color: #666666;
+  font-size: 14px;
+}
+/*# sourceMappingURL=price.css.map */

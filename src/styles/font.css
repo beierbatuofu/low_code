@@ -1,0 +1,296 @@
+@font-face {
+	font-family: "customFont";
+	src: url("./fonts/icomoon.eot");
+	src: url("./fonts/icomoon.eot") format("embedded-opentype"), url("./fonts/icomoon.ttf") format("truetype"), url("./fonts/icomoon.woff") format("woff"), url("./fonts/icomoon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+.iconfont {
+	font-family: "customFont";
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: baseline;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+}
+
+.iconworkbench:before {
+	font-family: "customFont";
+	content: "\e645";
+}
+
+.iconredo:before {
+	font-family: "customFont";
+	content: "\e644";
+}
+
+.iconrecover:before {
+	font-family: "customFont";
+	content: "\e643";
+}
+
+.iconcancel:before {
+	font-family: "customFont";
+	content: "\e642";
+}
+
+.icondelete:before {
+	font-family: "customFont";
+	content: "\e641";
+}
+
+.iconcopy:before {
+	font-family: "customFont";
+	content: "\e640";
+}
+
+.iconnew:before {
+	font-family: "customFont";
+	content: "\e63f";
+}
+
+.iconstart:before {
+	font-family: "customFont";
+	content: "\e63d";
+}
+
+.iconsend:before {
+	font-family: "customFont";
+	content: "\e63c";
+}
+
+.iconhandle:before {
+	font-family: "customFont";
+	content: "\e63b";
+}
+
+.icondeal:before {
+	font-family: "customFont";
+	content: "\e63a";
+}
+
+.icontime:before {
+	font-family: "customFont";
+	content: "\e636";
+}
+
+.iconyear:before {
+	font-family: "customFont";
+	content: "\e635";
+}
+
+.iconweek:before {
+	font-family: "customFont";
+	content: "\e634";
+}
+
+.iconuser:before {
+	font-family: "customFont";
+	content: "\e633";
+}
+
+.iconupload:before {
+	font-family: "customFont";
+	content: "\e632";
+}
+
+.icontree:before {
+	font-family: "customFont";
+	content: "\e631";
+}
+
+.icontitle:before {
+	font-family: "customFont";
+	content: "\e630";
+}
+
+.icontime_frame:before {
+	font-family: "customFont";
+	content: "\e62f";
+}
+
+.iconswitch:before {
+	font-family: "customFont";
+	content: "\e62e";
+}
+
+.iconsubform:before {
+	font-family: "customFont";
+	content: "\e62d";
+}
+
+.iconslider:before {
+	font-family: "customFont";
+	content: "\e62c";
+}
+
+.iconsingle_text:before {
+	font-family: "customFont";
+	content: "\e62b";
+}
+
+.iconselect:before {
+	font-family: "customFont";
+	content: "\e62a";
+}
+
+.iconrich_text:before {
+	font-family: "customFont";
+	content: "\e629";
+}
+
+.iconradio:before {
+	font-family: "customFont";
+	content: "\e628";
+}
+.iconinput:before {
+	font-family: "customFont";
+	content: "\e904";
+}
+
+.iconpicture:before {
+	font-family: "customFont";
+	content: "\e627";
+}
+
+.iconphone:before {
+	font-family: "customFont";
+	content: "\e626";
+}
+
+.iconpassword:before {
+	font-family: "customFont";
+	content: "\e625";
+}
+
+.iconnumber:before {
+	font-family: "customFont";
+	content: "\e624";
+}
+
+.iconmultiline_text:before {
+	font-family: "customFont";
+	content: "\e623";
+}
+
+.iconmonth:before {
+	font-family: "customFont";
+	content: "\e622";
+}
+
+.iconlocation:before {
+	font-family: "customFont";
+	content: "\e621";
+}
+
+.iconevaluate:before {
+	font-family: "customFont";
+	content: "\e620";
+}
+
+.icondatetime:before {
+	font-family: "customFont";
+	content: "\e61f";
+}
+
+.icondatetime_range:before {
+	font-family: "customFont";
+	content: "\e61e";
+}
+
+.icondate:before {
+	font-family: "customFont";
+	content: "\e61b";
+}
+
+.icondate_range:before {
+	font-family: "customFont";
+	content: "\e61a";
+}
+
+.iconcheckbox:before {
+	font-family: "customFont";
+	content: "\e619";
+}
+
+.iconcascade:before {
+	font-family: "customFont";
+	content: "\e618";
+}
+
+.iconaddress:before {
+	font-family: "customFont";
+	content: "\e617";
+}
+
+.custom-icon-depts:before {
+	font-family: "customFont";
+	content: "\e913";
+}
+
+.custom-icon-dept:before {
+	font-family: "customFont";
+	content: "\e914";
+}
+
+.custom-icon-people:before {
+	font-family: "customFont";
+	content: "\e900";
+}
+
+.custom-icon-tag:before {
+	font-family: "customFont";
+	content: "\e90f";
+}
+
+.custom-icon-peoples:before {
+	font-family: "customFont";
+	content: "\e901";
+}
+
+.custom-icon-user:before {
+	font-family: "customFont";
+	content: "\e903";
+}
+
+.custom-icon-record-circle:before {
+	font-family: "customFont";
+	content: "\e901";
+}
+
+.custom-icon-checkbox-circle:before {
+	font-family: "customFont";
+	content: "\e907";
+}
+
+.custom-icon-selectMulit-circle:before {
+	font-family: "customFont";
+	content: "\e908";
+}
+
+.custom-icon-select-circle:before {
+	font-family: "customFont";
+	content: "\e909";
+}
+
+.custom-icon-record-sphere:before {
+	font-family: "customFont";
+	content: "\e9c9";
+}
+
+.custom-icon-question-circle-o:before {
+	font-family: "customFont";
+	content: "\f29c";
+	font-style: normal;
+}
+
+.custom-icon-qrcode:before {
+	font-family: "customFont";
+	content: "\f029";
+	font-style: normal;
+}

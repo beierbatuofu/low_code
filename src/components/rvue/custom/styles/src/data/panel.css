@@ -1,0 +1,43 @@
+.avue-data-panel .item {
+  padding: 0 30px;
+  margin: 0 20px;
+  cursor: pointer;
+  height: 108px;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  color: #666;
+  background: #fff;
+  -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.avue-data-panel .item-icon {
+  font-size: 52px;
+}
+
+.avue-data-panel .item-info {
+  text-align: center;
+}
+
+.avue-data-panel .item-title {
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.avue-data-panel .item-count {
+  font-size: 20px;
+}
+/*# sourceMappingURL=panel.css.map */

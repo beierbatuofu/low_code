@@ -1,0 +1,250 @@
+
+$formulaeditHeight:500px;
+$formulaeditH3:40px;
+%aside{
+    height: $formulaeditHeight;
+    width:200px;
+    overflow-x: hidden;
+}
+
+%asideContainer{
+    height: calc(#{$formulaeditHeight} - #{$formulaeditH3});
+    overflow: auto;
+}
+
+%TagStyle{
+    font-size: 12px;
+    line-height: 1;
+    padding:2px 5px;
+    margin:3px;
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: normal;
+    font-variant-ligatures: contextual;
+   
+}
+
+%TagNumber{
+    color: #F4B700;
+    background: rgba(244,183,0,.15);
+    @extend %TagStyle;
+}
+
+%TagDate{
+    color: #248AF9;
+    background: rgba(36,138,249,.1);
+    @extend %TagStyle;
+}
+
+%TagDept{
+    color: #ED7115;
+    background: #FFEDE3;
+    @extend %TagStyle;
+}
+
+%TagSelect{
+    color: #0DB3A6;
+    background: rgba(13,179,166,.1);
+    @extend %TagStyle;
+}
+
+%TagArray{
+    color: #8C5FFB;
+    background: rgba(140,95,251,.1);
+    @extend %TagStyle;
+}
+
+%TagInput{
+    color: #0DB3A6;
+    background: rgba(13,179,166,.1);
+    @extend %TagStyle;
+}
+
+.formulaedit{
+    display: flex;
+    height:$formulaeditHeight;
+    border-bottom:  1px solid #EBEEF5;
+    &-dialog{
+        .el-dialog{
+            width: 1000px;
+         }
+    }
+    
+   
+    .formula-key{
+        cursor: pointer;
+        padding:0 5px;
+        &:hover{
+            background: rgba(64, 158, 255, 0.1);
+        }
+    }
+   
+    .code-mirror{
+       
+        height: $formulaeditHeight;
+        border:1px solid #EBEEF5;
+        border-bottom: none;
+        font-size: 16px; 
+        width: 676px;
+        height: 100%;
+        .cm-keyword{
+            //  color:red;
+        }
+        &-rule{
+            border-top:1px solid #EBEEF5;
+            padding:5px;
+            font-size: 14px;
+        }
+        .CodeMirror-widget{
+            display: inline;
+        }
+        .cm-field,.cm-formula{
+               font-size: 14px;
+               display: inline-block;
+               border-radius:0;
+               padding:2px;
+             
+             
+        }
+        .CodeMirror-line{
+              
+                line-height: 1.5;
+        } 
+        
+    }
+    .left{
+       @extend %aside;
+       .field-list{
+           li{
+               margin-bottom: 10px;
+           }
+       }
+    
+    }
+    .right{
+       @extend %aside;
+    }
+    .body{
+        flex:1;
+        border:1px solid  #f5f5f5;
+    }
+    .h3{
+      font-size: 14px;
+      line-height:$formulaeditH3;
+      text-align: center;
+      box-shadow: -2px 2px 3px 0 rgba(0 0 0 / 10%);
+    }
+    &-dialog{
+        .el-dialog__body{
+            padding:0!important;
+        }
+    }
+    .tag{
+        &-textarea{
+            @extend %TagInput;
+        }
+        &-selectMulti{
+            @extend %TagArray;
+        }
+        &-datetime{
+            @extend %TagDate;
+        }
+        &-input{
+             @extend %TagInput;
+        }
+        &-number{
+             @extend %TagNumber;
+        }
+        &-date{
+             @extend %TagDate;
+        }
+        &-deptRadio{
+            @extend %TagDept;
+        }
+        &-userRadio{
+            @extend %TagDept;
+        }
+        &-dept{
+            @extend %TagArray;
+        }
+        &-user{
+            @extend %TagArray;
+         }
+        &-select{
+            @extend %TagInput;
+        } 
+        &-radio{
+           @extend %TagInput;
+         } 
+        &-checkbox{
+            @extend %TagArray;
+        }
+    }
+    .el-collapse-item__header{
+        height: 30px;
+        line-height: 30px;
+        font-size:16px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+    .field{
+        &-list{
+            @extend %asideContainer;
+             p{
+              
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               font-size: 14px;
+               padding:0 5px 0 16px;
+               cursor: pointer;
+               margin-bottom: 5px;
+               &:hover{
+                   background:$color10;
+               }
+               span{
+                   display: block;
+                   @extend %TagStyle;
+                   line-height: 1;
+                   white-space: nowrap;
+               }  
+               .formula-field{
+                    width: 120px;
+                    line-height: 1.5;
+                    font-size: 14px;
+             }
+            }    
+          
+         
+        }
+    }
+    .el-collapse{
+        border-bottom: none;
+    }
+    .el-collapse-item__content{
+        padding-bottom: 0;
+        li{
+          padding-left:16px;
+        }
+    }
+}
+.CodeMirror-hints{
+    z-index: 999999!important;
+    background: #ccc;
+}
+
+.code-flied{
+    padding:5px;
+    font-size:16px;
+}
+
+
+
+.formulaedit-dialog{
+  .el-dialog__header{
+    .dialog-title{
+      border-bottom:none ;
+    }
+  }
+}

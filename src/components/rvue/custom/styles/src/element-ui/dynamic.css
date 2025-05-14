@@ -1,0 +1,40 @@
+.avue-dynamic__item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.avue-dynamic__header {
+  padding-left: 40px;
+}
+
+.avue-dynamic__row {
+  position: relative;
+  border-top: 1px dashed #eee;
+  padding-top: 13px;
+}
+
+.avue-dynamic__row:first-child {
+  border-top: 0;
+}
+
+.avue-dynamic__menu {
+  position: absolute;
+  right: 0;
+  z-index: 1024;
+}
+
+.avue-dynamic__input {
+  margin-right: 8px;
+  width: 100%;
+}
+
+.avue-dynamic__button {
+  margin-bottom: 0 !important;
+}
+/*# sourceMappingURL=dynamic.css.map */

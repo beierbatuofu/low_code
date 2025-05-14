@@ -1,0 +1,76 @@
+.avue-skeleton__avatar {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #f2f2f2;
+}
+
+.avue-skeleton__header {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 16px;
+}
+
+.avue-skeleton__content {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+}
+
+.avue-skeleton__title {
+  margin-top: 16px;
+  height: 16px;
+  width: 40%;
+  background: #f2f2f2;
+}
+
+.avue-skeleton__item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.avue-skeleton__item:last-child {
+  border-bottom: none;
+}
+
+.avue-skeleton__li {
+  margin-bottom: 10px;
+  height: 16px;
+  background: #f2f2f2;
+  list-style: none;
+  width: 100%;
+}
+
+.avue-skeleton__li:last-child {
+  width: 50%;
+}
+
+.avue-skeleton__loading {
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #f2f2f2), color-stop(37%, #e6e6e6), color-stop(63%, #f2f2f2));
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  -webkit-animation: avue-skeleton-loading 1.4s ease infinite;
+          animation: avue-skeleton-loading 1.4s ease infinite;
+  background-size: 400% 100%;
+}
+
+@-webkit-keyframes avue-skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes avue-skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+/*# sourceMappingURL=skeleton.css.map */

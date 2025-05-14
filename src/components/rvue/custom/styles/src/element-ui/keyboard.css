@@ -1,0 +1,678 @@
+@charset "UTF-8";
+.avue-keyboard--default {
+  /*
+        number keyboard
+    */
+  /*
+        mobile keyboard
+    */
+}
+
+.avue-keyboard--default .akeyboard-keyboard {
+  height: 100%;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-innerKeys {
+  text-align: center;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-keys {
+  height: 40px;
+  min-width: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: white;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-keys:hover {
+  background: #1e9fff;
+  color: white;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-keys-Delete {
+  width: 80px;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-keys-Tab {
+  width: 80px;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-keys-Caps {
+  width: 77px;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-keys-Enter {
+  width: 90px;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-keys-Shift {
+  width: 106px;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-keys-Space {
+  width: 350px;
+}
+
+.avue-keyboard--default .keyboard-keyboard-keys-focus {
+  background: #1e9fff;
+  color: white;
+}
+
+.avue-keyboard--default .akeyboard-keyboard-fixedBottomCenter {
+  width: 100% !important;
+  height: auto !important;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0 !important;
+}
+
+.avue-keyboard--default .akeyboard-numberKeyboard {
+  height: 100%;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--default .akeyboard-numberKeyboard-keys-Enter {
+  height: 40px;
+  width: 100px;
+}
+
+.avue-keyboard--default .akeyboard-mobileKeyboard {
+  height: 100%;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--default .akeyboard-mobileKeyboard-keys {
+  height: 25px;
+  min-width: 25px;
+  padding: 0 10px;
+  border-radius: 3px;
+  background: white;
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2px;
+  margin-top: 3px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 10px;
+}
+
+.avue-keyboard--default .akeyboard-mobileKeyboard-keys:hover {
+  background: #1e9fff !important;
+  color: white;
+}
+
+.avue-keyboard--default .akeyboard-mobileKeyboard-keys-⇧ {
+  width: 25px;
+  background-color: #999faf;
+}
+
+.avue-keyboard--default .akeyboard-mobileKeyboard-keys-⇦ {
+  width: 25px;
+  background-color: #999faf;
+}
+
+.avue-keyboard--default .akeyboard-mobileKeyboard-keys-Space {
+  height: 28px;
+  width: 100px;
+  line-height: 28px;
+  margin-left: 55px;
+}
+
+.avue-keyboard--default .akeyboard-mobileKeyboard-keys-Enter {
+  height: 28px;
+  width: 55px;
+  line-height: 28px;
+  background: #1e9fff !important;
+  color: white;
+}
+
+.avue-keyboard--default .akeyboard-mobileKeyboard-keys-focus {
+  background: #1e9fff !important;
+  color: white;
+}
+
+.avue-keyboard--green {
+  /*
+        number keyboard
+    */
+  /*
+        mobile keyboard
+    */
+}
+
+.avue-keyboard--green .akeyboard-keyboard {
+  height: 100%;
+  width: 100%;
+  background: #003300;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-innerKeys {
+  text-align: center;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-keys {
+  height: 40px;
+  min-width: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: #cccc99;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-keys:hover {
+  background: #669933;
+  color: white;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-keys-Delete {
+  width: 80px;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-keys-Tab {
+  width: 80px;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-keys-Caps {
+  width: 77px;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-keys-Enter {
+  width: 90px;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-keys-Shift {
+  width: 106px;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-keys-Space {
+  width: 350px;
+}
+
+.avue-keyboard--green .keyboard-keyboard-keys-focus {
+  background: #669933;
+  color: white;
+}
+
+.avue-keyboard--green .akeyboard-keyboard-fixedBottomCenter {
+  width: 100% !important;
+  height: auto !important;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0 !important;
+}
+
+.avue-keyboard--green .akeyboard-numberKeyboard {
+  height: 100%;
+  width: 100%;
+  background: #003300;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--green .akeyboard-numberKeyboard-keys-Enter {
+  height: 40px;
+  width: 100px;
+}
+
+.avue-keyboard--green .akeyboard-mobileKeyboard {
+  height: 100%;
+  width: 100%;
+  background: #003300;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--green .akeyboard-mobileKeyboard-keys {
+  height: 25px;
+  min-width: 25px;
+  padding: 0 10px;
+  border-radius: 3px;
+  background: #cccc99;
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2px;
+  margin-top: 3px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 10px;
+}
+
+.avue-keyboard--green .akeyboard-mobileKeyboard-keys:hover {
+  background: #669933 !important;
+  color: white;
+}
+
+.avue-keyboard--green .akeyboard-mobileKeyboard-keys-⇧ {
+  width: 25px;
+  background-color: #999faf;
+}
+
+.avue-keyboard--green .akeyboard-mobileKeyboard-keys-⇦ {
+  width: 25px;
+  background-color: #999faf;
+}
+
+.avue-keyboard--green .akeyboard-mobileKeyboard-keys-Space {
+  height: 28px;
+  width: 100px;
+  line-height: 28px;
+  margin-left: 55px;
+}
+
+.avue-keyboard--green .akeyboard-mobileKeyboard-keys-Enter {
+  height: 28px;
+  width: 55px;
+  line-height: 28px;
+  background: #669933 !important;
+  color: white;
+}
+
+.avue-keyboard--green .akeyboard-mobileKeyboard-keys-focus {
+  background: #669933 !important;
+  color: white;
+}
+
+.avue-keyboard--dark {
+  /*
+        number keyboard
+    */
+  /*
+        mobile keyboard
+    */
+}
+
+.avue-keyboard--dark .akeyboard-keyboard {
+  height: 100%;
+  width: 100%;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-innerKeys {
+  text-align: center;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-keys {
+  height: 40px;
+  min-width: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: #393d49;
+  color: white;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-keys:hover {
+  background: #1e9fff;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-keys-Delete {
+  width: 80px;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-keys-Tab {
+  width: 80px;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-keys-Caps {
+  width: 77px;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-keys-Enter {
+  width: 90px;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-keys-Shift {
+  width: 106px;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-keys-Space {
+  width: 350px;
+}
+
+.avue-keyboard--dark .keyboard-keyboard-keys-focus {
+  background: #1e9fff;
+}
+
+.avue-keyboard--dark .akeyboard-keyboard-fixedBottomCenter {
+  width: 100% !important;
+  height: auto !important;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0 !important;
+}
+
+.avue-keyboard--dark .akeyboard-numberKeyboard {
+  height: 100%;
+  width: 100%;
+  background: black;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--dark .akeyboard-numberKeyboard-keys-Enter {
+  height: 40px;
+  width: 100px;
+}
+
+.avue-keyboard--dark .akeyboard-mobileKeyboard {
+  height: 100%;
+  width: 100%;
+  background: black;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--dark .akeyboard-mobileKeyboard-keys {
+  height: 25px;
+  min-width: 25px;
+  padding: 0 10px;
+  border-radius: 3px;
+  background: #393d49;
+  color: white;
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2px;
+  margin-top: 3px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 10px;
+}
+
+.avue-keyboard--dark .akeyboard-mobileKeyboard-keys:hover {
+  background: #1e9fff !important;
+  color: white;
+}
+
+.avue-keyboard--dark .akeyboard-mobileKeyboard-keys-⇧ {
+  width: 25px;
+  background-color: #999faf;
+}
+
+.avue-keyboard--dark .akeyboard-mobileKeyboard-keys-⇦ {
+  width: 25px;
+  background-color: #999faf;
+}
+
+.avue-keyboard--dark .akeyboard-mobileKeyboard-keys-Space {
+  height: 28px;
+  width: 100px;
+  line-height: 28px;
+  margin-left: 55px;
+}
+
+.avue-keyboard--dark .akeyboard-mobileKeyboard-keys-Enter {
+  height: 28px;
+  width: 55px;
+  line-height: 28px;
+  background: #1e9fff !important;
+  color: white;
+}
+
+.avue-keyboard--dark .akeyboard-mobileKeyboard-keys-focus {
+  background: #1e9fff !important;
+  color: white;
+}
+
+.avue-keyboard--classic {
+  /*
+        number keyboard
+    */
+  /*
+        mobile keyboard
+    */
+}
+
+.avue-keyboard--classic .akeyboard-keyboard {
+  height: 100%;
+  width: 100%;
+  background: #2f4056;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-innerKeys {
+  text-align: center;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-keys {
+  height: 40px;
+  min-width: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: white;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-keys:hover {
+  background: #c2c2c2;
+  color: white;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-keys-Delete {
+  width: 80px;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-keys-Tab {
+  width: 80px;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-keys-Caps {
+  width: 77px;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-keys-Enter {
+  width: 90px;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-keys-Shift {
+  width: 106px;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-keys-Space {
+  width: 350px;
+}
+
+.avue-keyboard--classic .keyboard-keyboard-keys-focus {
+  background: #c2c2c2;
+  color: white;
+}
+
+.avue-keyboard--classic .akeyboard-keyboard-fixedBottomCenter {
+  width: 100% !important;
+  height: auto !important;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0 !important;
+}
+
+.avue-keyboard--classic .akeyboard-numberKeyboard {
+  height: 100%;
+  width: 100%;
+  background: #2f4056;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--classic .akeyboard-numberKeyboard-keys-Enter {
+  height: 40px;
+  width: 100px;
+}
+
+.avue-keyboard--classic .akeyboard-mobileKeyboard {
+  height: 100%;
+  width: 100%;
+  background: #2f4056;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-keyboard--classic .akeyboard-mobileKeyboard-keys {
+  height: 25px;
+  min-width: 25px;
+  padding: 0 10px;
+  border-radius: 3px;
+  background: white;
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2px;
+  margin-top: 3px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 10px;
+}
+
+.avue-keyboard--classic .akeyboard-mobileKeyboard-keys:hover {
+  background: #c2c2c2 !important;
+  color: white;
+}
+
+.avue-keyboard--classic .akeyboard-mobileKeyboard-keys-⇧ {
+  width: 25px;
+  background-color: #999faf;
+}
+
+.avue-keyboard--classic .akeyboard-mobileKeyboard-keys-⇦ {
+  width: 25px;
+  background-color: #999faf;
+}
+
+.avue-keyboard--classic .akeyboard-mobileKeyboard-keys-Space {
+  height: 28px;
+  width: 100px;
+  line-height: 28px;
+  margin-left: 55px;
+}
+
+.avue-keyboard--classic .akeyboard-mobileKeyboard-keys-Enter {
+  height: 28px;
+  width: 55px;
+  line-height: 28px;
+  background: #c2c2c2 !important;
+  color: white;
+}
+
+.avue-keyboard--classic .akeyboard-mobileKeyboard-keys-focus {
+  background: #c2c2c2 !important;
+  color: white;
+}
+/*# sourceMappingURL=keyboard.css.map */

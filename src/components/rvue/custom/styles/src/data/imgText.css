@@ -1,0 +1,75 @@
+.avue-data-imgtext .item {
+  position: relative;
+  height: 340px;
+  width: 240px;
+  margin: 10px auto;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 20px #ccc;
+          box-shadow: 2px 2px 20px #ccc;
+}
+
+.avue-data-imgtext .item-header img {
+  width: 100%;
+  height: 170px;
+  background: red;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.avue-data-imgtext .item-content {
+  padding: 10px 15px;
+  color: #333 !important;
+}
+
+.avue-data-imgtext .item-content span {
+  font-size: 20px;
+}
+
+.avue-data-imgtext .item-content:hover span {
+  color: #1890ff;
+}
+
+.avue-data-imgtext .item-content p {
+  font-size: 14px;
+  height: 60px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+.avue-data-imgtext .item-footer {
+  padding: 10px 15px;
+  position: relative;
+}
+
+.avue-data-imgtext .item-footer img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.avue-data-imgtext .item-footer div {
+  display: inline-block;
+}
+
+.avue-data-imgtext .item-footer div ul, .avue-data-imgtext .item-footer div li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-left: -8px;
+}
+
+.avue-data-imgtext .item-footer div:nth-child(1) {
+  font-size: 14px;
+  color: #ccc !important;
+}
+
+.avue-data-imgtext .item-footer div:nth-child(2) {
+  position: absolute;
+  right: 15px;
+}
+/*# sourceMappingURL=imgText.css.map */

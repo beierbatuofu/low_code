@@ -1,0 +1,111 @@
+@for $i from 1 to 10{
+    @each $s in top,right,bottom,left{
+        $num:$i*10;
+        .margin-#{$s}-#{$num}{
+            margin-#{$s}: #{$num}px;
+       }
+    } 
+}
+
+
+@for $size from 9 to 32{
+    .font-size-#{$size+1}{
+        font-size:#{$size+1}px;
+    }
+}
+
+@mixin hideAllStylename {
+    display: none!important;
+    visibility: hidden!important;;
+    *{
+        display: none!important;;
+        visibility: hidden!important;;
+    }
+} 
+
+
+.force-margin-bottom-0{
+    margin-bottom: 0!important;
+}
+
+
+//字数过长，隐藏显示。。。
+@mixin ExtraNotDisplayed() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+//绝对定位公共混入
+@mixin PositionAbsoulte($top:null,$right:null,$bottom:null,$left:null){
+    position: absolute;
+    @if($top){
+        top: $top;
+    }
+    @if($left){
+        left: $left;
+    }
+    @if($right){
+        right: $right;
+    }
+    @if($bottom){
+        bottom: $bottom;
+    }
+}
+
+//相对定位公共混入
+@mixin PositionRelative($width:null,$height:null){
+    position: relative;
+    width: $width;
+    height: $height;
+}
+
+
+//之前案列--开会时
+
+// //水平垂直居中   
+// @mixin CenterHorVer($display,$justify:center,$align:center){
+//     display: $display;
+// 	   justify-content: $justify;
+// 	   align-items: $align;
+// }
+
+// //弹性盒子对齐方式
+// @mixin JustityContent($content){
+//     display: flex;
+// 	   justify-content: $content;
+// }
+
+// //弹性布局
+// @mixin FlexWrap($flex:flex,$wrap:wrap){
+//     display: $flex;
+// 	   flex-wrap: $wrap;
+// }
+
+//综合水平垂直居中|弹性布局对齐方式
+@mixin JustityAndFlexWrap($display:null,$justify:null,$align:null,$flex:null){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $flex;
+}
+
+
+//全局头像
+@mixin GlobalAvatar($width:null,$height:null,$borderRadios:null,$background:null){
+    width: $width;
+    height: $height;
+    border-radius:$borderRadios;
+    background-color: $background;
+}
+
+//垂直对齐方式
+@mixin VertivalAlign($display:null,$vertical:null,$width:null,$height:null){
+    display: $display;
+    vertical-align: $vertical;
+    width:$width;
+    height:$height;
+}
+

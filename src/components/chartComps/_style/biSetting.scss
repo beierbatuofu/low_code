@@ -1,0 +1,32 @@
+.bidead-container {
+	padding: 20px;
+	background: white;
+	margin-bottom: 10px;
+	@include JustityAndFlexWrap(flex, space-between, null, null);
+}
+.config-container {
+	overflow-y: scroll;
+	height: 70vh;
+	.config-item {
+		padding: 0 20px;
+	}
+	::v-deep.ct-container {
+		.ct-title {
+			margin-bottom: 8px;
+			margin-right: 10px;
+			font-weight: 600;
+			font-size: 14px;
+			color: #525d6d;
+		}
+		.el-switch {
+			vertical-align: super !important;
+		}
+		.flex {
+			display: flex;
+			justify-content: space-between;
+		}
+		.bold {
+			font-weight: bold;
+		}
+	}
+}

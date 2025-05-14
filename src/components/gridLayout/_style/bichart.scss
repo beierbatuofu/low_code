@@ -1,0 +1,66 @@
+.option-list {
+	@include PositionAbsoulte(0px, 2px, null, null);
+	@include JustityAndFlexWrap(flex, flex-end, null, null);
+	height: 24px;
+	z-index: 1;
+	opacity: 0;
+	overflow: hidden;
+	background: white;
+	i {
+		padding: 8px;
+	}
+	img {
+		width: 20px;
+		height: 20px;
+	}
+	transition: all 0.3s;
+}
+// .editor-center {
+// 	right: 50%;
+// 	margin-right: -45px;
+// }
+.chart-list {
+	height: 100%;
+	position: relative;
+	background: white;
+	margin-bottom: 10px;
+	border-radius: 4px;
+
+	.title {
+		position: absolute;
+		top: 3px;
+		left: 12px;
+		width: 100%;
+		font-weight: 600;
+		> div {
+			width: 60%;
+			@include ExtraNotDisplayed();
+			background: white;
+		}
+	}
+}
+.chart-list:hover {
+	box-shadow: 0 6px 14px 0 rgb(84 48 132 / 15%);
+}
+.show-options {
+	opacity: 1;
+}
+.flex {
+	@include JustityAndFlexWrap(flex, center, center, null);
+	height: 100%;
+}
+.pointer {
+	cursor: pointer;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.table-container {
+	padding-top: 30px !important;
+}
+::v-deep .v-modal {
+	position: auto !important;
+}
+
+.el-icon-edit:before {
+	content: "";
+}

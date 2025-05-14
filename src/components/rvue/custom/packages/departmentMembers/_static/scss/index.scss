@@ -1,0 +1,49 @@
+.department {
+	&-top {
+		height: 150px;
+		border: 1px solid #e0e0e0;
+		margin-bottom: 10px;
+		overflow: auto;
+		padding: 5px 10px;
+		box-sizing: border-box;
+		overflow: auto;
+		.el-tag {
+			margin-right: 10px;
+		}
+	}
+	&-body {
+		border: 1px solid #e0e0e0;
+		.el-tabs__item {
+			padding: 0 10px;
+		}
+		.el-tabs__nav-scroll {
+			padding: 0 10px;
+		}
+		.el-tabs__active-bar {
+			background: $color;
+		}
+		.member {
+			display: flex;
+			.group {
+				height: 300px;
+				overflow: auto;
+			}
+			& > div {
+				flex: 1;
+				padding: 10px;
+
+				&:first-child {
+					border-right: 1px solid #e0e0e0;
+					overflow-x: auto;
+				}
+			}
+		}
+	}
+}
+
+.el-dialog__body {
+	padding: 0px 20px 20px;
+}
+.el-tabs__header {
+	margin: 0 !important;
+}

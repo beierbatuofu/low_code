@@ -1,0 +1,100 @@
+.avue-form {
+  position: relative;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-form__item--top .el-form-item__label {
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.avue-form__item--top .el-form-item__content {
+  margin-left: 0 !important;
+}
+
+.avue-form__item--left .el-form-item__label {
+  text-align: left !important;
+}
+
+.avue-form__menu {
+  padding: 5px 10px 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-form__menu--center {
+  text-align: center;
+}
+
+.avue-form__menu--center .el-button {
+  margin: 0 5px;
+}
+
+.avue-form__menu--left {
+  text-align: left;
+}
+
+.avue-form__menu--right {
+  text-align: right;
+}
+
+.avue-form__tabs {
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avue-form__group {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+}
+
+.avue-form__group--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.avue-form__group .el-col {
+  position: relative;
+}
+
+.avue-form__line {
+  display: inline-block;
+  height: 42px;
+}
+
+.avue-form__row--block {
+  width: 100%;
+  display: block;
+}
+
+.avue-form__row--cursor {
+  cursor: pointer;
+}
+
+.avue-form__option {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  z-index: 999;
+}
+
+.avue-form__option i {
+  color: #666;
+}
+
+.avue-form__option i + i {
+  margin-left: 10px;
+}
+
+.el-drawer .avue-form {
+  padding: 0 20px;
+}
+/*# sourceMappingURL=form.css.map */

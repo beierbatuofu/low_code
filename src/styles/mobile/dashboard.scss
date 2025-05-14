@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+	.btn-create {
+		@include hideAllStylename;
+	}
+	.app-title {
+		i {
+			display: none !important;
+			visibility: hidden !important;
+			* {
+				display: none !important;
+				visibility: hidden !important;
+			}
+		}
+	}
+	.nav .nav-btn {
+		display: none !important;
+	}
+	.nav.left {
+		width: 100px !important;
+	}
+	.app-item {
+		margin-bottom: 10px;
+	}
+	.app-mine {
+		.app-collect {
+			& ~ .app-collect {
+				display: none;
+			}
+		}
+	}
+}

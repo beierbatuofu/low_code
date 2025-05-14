@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,kBAFc,CAEb,gBAAM,CAAA;EACL,YAAY,EAAE,GAAG;EACjB,SAAS,EAAE,IAAI;CAShB;;AAbL,AAKM,kBALY,CAKX,uBAAO,CAAA;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,MAAM;EAClB,WAAW,EAAC,IAAI;EAChB,aAAa,EAAE,GAAG;EAClB,KAAK,EAAC,IAAI;CACX",
+    "sources": [
+        "cell.scss"
+    ],
+    "names": [],
+    "file": "cell.css"
+}

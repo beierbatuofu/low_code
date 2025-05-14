@@ -1,0 +1,15 @@
+.avue-select .sortable-ghost {
+  opacity: .8;
+  color: #fff !important;
+  background: #6087FD !important;
+}
+
+.avue-select .el-tag {
+  cursor: pointer;
+}
+
+.avue-select__desc {
+  float: right;
+  color: #8492a6;
+  font-size: 13px;
+}
